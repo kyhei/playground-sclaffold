@@ -1,0 +1,49 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "From the journey of a thousand miles an inch",
+  "main": "index.js",
+  "author": "kyhei",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "prod": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js",
+    "check": "yarn run tsc --noEmit && yarn run tslint",
+    "tslint": "tslint --project tsconfig.json",
+    "tslint-fix": "tslint --fix --project tsconfig.json",
+    "dev": "live-server --port=9001"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "css-loader": "^3.1.0",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "typescript": "^3.5.3",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.1.0",
+    "vue-loader": "^15.7.1",
+    "vue-property-decorator": "^8.2.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "mini-css-extract-plugin": "^0.8.0",
+    "prettier": "^1.18.2",
+    "ts-loader": "^6.0.4",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-plugin-prettier": "^2.0.1",
+    "url-loader": "^2.1.0"
+  }
+}

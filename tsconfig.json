@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "es5",
+    "module": "es2015",
+    /* Strict Type-Checking Options */
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    /* Additional Checks */
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    /* Module Resolution Options */
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  }
+}
